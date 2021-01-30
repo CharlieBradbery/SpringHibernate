@@ -11,15 +11,11 @@ public class Car {
     private Long id;
 
     @Column
+    private String model;
+    @Column
     private int series;
 
-    @Column
-    private String model;
-
-
-    public Car(){
-    }
-
+    public Car(){}
     public Car(String model, int series){
         this.model = model;
         this.series = series;
